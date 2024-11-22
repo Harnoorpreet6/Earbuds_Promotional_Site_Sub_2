@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Novo EarBuds</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/model.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <!-- link to greensock main library and scroll plugin -->
+  </head>
+  <body>
+    <h1 class="hidden">Welcome to Earbuds Hub</h1>
+    <header class="grid-con" id="main-header">
+        <nav id="main-nav" class="col-span-full m-col-start-1 m-col-end-13 l-col-span-full">
+            <h2 class="hidden">Main Navigation</h2>
+            <button id="button"></button>
+            <div id="burger-con">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    
+                   
+                    <li><a href="contact.html">Contact Us</a></li>
+                    
+                </ul>
+                <div class="close-icon" id="close-menu-id">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </nav>
+       
+
+       
+        
+        <div class="header-text col-span-full m-col-span-full l-col-span-full">EARBUDS HUB</div>
+    </header>
+
+<main>
+
+
+    <section class="grid-con hotspot">
+
+        <div class="col-span-full">
+    <model-viewer id="model" src="model/earbuds-with-lights.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.767925971078982m 1.9983319115772458m -7.7697715917927495m" data-normal="0.42603449760108775m 0.11404529571806339m 0.8974899873415684m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation"  id="hotspot-1"></div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="1.727525658627827m 2.817670657088388m -8.613364216110032m" data-normal="0.1167063798979924m 0.4730803268450905m -0.8732551890731872m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" id="hotspot-2">charging case</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="1.4794486986574669m 2.7019106713816923m -7.465184940980434m" data-normal="0.006680823275265267m 0.23477302815173479m 0.972027258801331m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation"  id="hotspot-3"></div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="1.8831358353569423m 2.0449585929697744m -8.636537506356852m" data-normal="0.5121035898665113m 0.2460261482653529m -0.8229344127058648m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation"  id="hotspot-4"></div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="0.4588314904791261m 1.8923812157485858m -8.395106565926152m" data-normal="-0.7485274982094692m 0.01862701594931901m -0.6628420767430935m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation"  id="hotspot-5"></div>
+      </button><button class="Hotspot" slot="hotspot-6" data-position="0.9813286421037151m 0.795538934031031m -8.692686315445428m" data-normal="-0.0004580376527509024m -0.005814020707958743m -0.9999829935377482m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation"  id="hotspot-6"></div>
+      </button><button class="Hotspot" slot="hotspot-7" data-position="1.8846229925917588m 1.8730907960804664m -8.254635990033371m" data-normal="0.8017284842066786m -0.12939769009378593m 0.5835132178537641m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation"  id="hotspot-7"></div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer> 
+</div>
+    </section>
+    <section class="full-width-grid-con video-main">
+        <h2 class="hidden">Product Showcase Video</h2>
+        <div id="main-video" class="col-span-full">
+            <video id="videoPlayer" loop>
+                <source src="video/showcase.mp4" type="video/mp4" />
+            </video>                    
+        </div>
+    </section>
+
+    <section class="full-width-grid-con scrolling-text">
+        <h2 class="hidden">Special Offer</h2>
+        <div class="col-span-full scrolling-container">
+            <div>
+              <div class="scrolling-text-content">
+                <p>Upgrade your sound experience with a 10% discount on your first purchase!
+                   Upgrade your sound experience with a 10% discount on your first purchase!
+                </p>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-con product-section">
+        <h2 class="hidden">Our Best Earbuds</h2>
+        <div class="product-text col-span-full m-col-span-full">BEST SELLERS</div>
+
+        <div class="product col-start-2 col-end-4 m-col-start-1 m-col-end-5 l-col-start-3 l-col-end-5">
+            <img src="images/img2_0001.png" alt="Wireless Earbuds Model 1">
+            <div class="price">$99.99</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product col-start-2 col-end-4 m-col-start-5 m-col-end-9 l-col-start-6 l-col-end-8">
+            <img src="images/img3_0001-removebg-preview.png" alt="Wireless Earbuds Model 2">
+            <div class="price">$129.99</div>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product col-start-2 col-end-4 m-col-start-9 m-col-end-13 l-col-start-9 l-col-end-11">
+            <img src="images/img3_0001.png" alt="Noise Cancelling Earbuds">
+            <div class="price">$149.99</div>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    
+
+    <section id="main-text" class="grid-con">
+        <h2 class="hidden">Tagline</h2>
+        <div class="text col-start-1 col-end-5 m-col-start-3 m-col-end-12 l-col-start-4 l-col-end-11">IMMERSE IN PREMIUM SOUND</div>
+    </section>
+
+    
+    <section class="grid-con about-us-main-text">
+        <h2 class="hidden">Text</h2>
+        <div class="main-text col-span-full m-col-start-3 m-col-end-11 l-col-start-2 l-col-end-12">
+            <p>SoundPro Earbuds are an innovative product designed for music enthusiasts and professionals alike. Developed with cutting-edge technology and precision, they deliver unparalleled sound quality and comfort.</p>
+            <p>Introduced in the modern era of audio innovation, SoundPro Earbuds are crafted to redefine the listening experience. With advanced noise-canceling features and seamless connectivity, they cater to a wide range of users, from audiophiles to casual listeners.</p>
+            <p>Praised for their sleek design and superior performance, SoundPro Earbuds have become a favorite among those who value immersive sound and ergonomic comfort. Perfect for work, travel, or leisure, they are the ultimate companion for a modern lifestyle.</p>
+        </div>
+        <div class="yellow-phrase col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-12">— "Stay connected, stay energized—let your sound inspire your day." </div>
+    </section>
+
+    <section class="grid-con contact-form">
+        <h2 class="hidden">Contact Form</h2>
+        <div id="contact-form" class="col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-7">
+        <form action="email.php" method="POST" enctype="text/plain">
+            <input name="fullName" type="text" placeholder="First & Last Name" class="contact-input">
+            <input name="contactInfo" type="text" required placeholder="Email" class="contact-input">
+            <input name="subject" type="text" required placeholder="Subject" class="contact-input">
+            <textarea name="msg" placeholder="Type your message here..." class="contact-input-message"></textarea>
+            <div class="contact-send-button col-start-1 col-end-3"><button>Send Message</button></div>
+        </form>
+    </div>
+
+    <div class="col-span-full m-col-start-7 m-col-end-13">
+    <div class="contact-office col-span-full">
+        <p>Office</p>
+        <p>1234 N Summer RD. London ON, Canada N6Y T4E</p>
+    </div>
+
+    <div class="contact-phone col-span-full">
+        <p>Phone</p>
+        <p>+1 (234) 567-8910</p>
+    </div>
+
+    <div class="contact-email col-span-full">
+        <p>Email</p>
+        <p>drnut_bussines@gmailcom</p>
+    </div>
+    </div>
+    </section>
+
+    <section class="grid-con text-phrase">
+        <h2 class="hidden">Contact Form</h2>
+    <div class="text-contact-phrase col-span-full m-col-span-full l-col-start-2 l-col-end-12">
+        <p>We're excited to explore partnership opportunities with retailers and tech outlets across Ontario. If you're a business looking to enhance your product lineup or collaborate on promotions, we'd love to connect. Let’s work together to deliver exceptional audio experiences to our customers. Contact us today to discuss how we can grow together!
+        </p>
+    </div>
+
+    <div class="pr-team-text col-start-3 col-end-5 m-col-start-10 m-col-end-13">
+        <p>PR Team of EARBUDS HUB</p>
+    </div>
+    </section>
+
+    <section class="grid-con discount">
+    <h2 class="hidden">Discount</h2>
+    <div class="discount-text col-span-full m-col-start-3 m-col-end-11 l-col-start-3 l-col-end-11">
+        <p>Get the 5% discount by subscribing our news 
+        </p>
+    </div>
+    <div class="col-start-2 col-end-4 m-col-start-5 m-col-end-9">
+        <input name="email" type="text" placeholder="Email" class="contact-input-discount">
+    </div>
+
+    <div class="subscribe-button col-start-2 col-end-4 m-col-start-5 m-col-end-9">
+
+        <button data-modal-target="#modal">Subscribe</button>
+    </div>
+
+    </section>
+
+    
+</main>
+
+<footer class="grid-con">
+    <div class="footer-text col-start-2 col-end-3 m-col-start-1 m-col-end-3">
+        <p>Shipping Policy</p>
+        <p>Returns & Refunds</p>
+    </div>
+
+    <div class="footer-text col-start-2 col-end-3 m-col-start-3 m-col-end-6">
+        <p>FAQs</p>
+        <p>Contact Support</p>
+    </div>
+
+    <div class="footer-text-1 col-start-2 col-end-3 m-col-start-6 m-col-end-8">
+        <p>Stay Updated</p>
+    </div>
+
+    
+
+    <div class="social-media col-start-2 col-end-3 m-col-start-10 m-col-end-13">
+        <img src="images/twitter.png" alt="Twitter">
+        <img src="images/instagram.png" alt="Instagram">
+        <img src="images/facebook.png" alt="Facebook">
+    </div>
+
+    <div class="copyright-text col-span-full">
+        <p>Copyright ©2024 Earbuds Hub</p>
+    </div>
+</footer>
+
+    
+    
+    <!-- Loads <model-viewer> for browsers: -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="js/hotspot.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
